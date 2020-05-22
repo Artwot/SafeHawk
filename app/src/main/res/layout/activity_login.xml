@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Login">
+
+
+    <TextView
+        android:id="@+id/id_forgot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="656dp"
+        android:layout_marginEnd="159dp"
+        android:text="¿Olvídó su pin?"
+        android:textAlignment="center"
+        android:textColor="@color/colorLetras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="343dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="298dp"
+        android:layout_marginEnd="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/id_1"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:text="\n1"
+                android:textAlignment="center"
+                android:textColor="@color/colorLetras"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/id_2"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:text="\n2"
+                android:textAlignment="center"
+                android:textColor="@color/colorLetras"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/id_3"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:text="\n3"
+                android:textAlignment="center"
+                android:textColor="@color/colorLetras"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/id_4"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:text="\n4"
+                android:textAlignment="center"
+                android:textColor="@color/colorLetras"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/id_5"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:text="\n5"
+                android:textAlignment="center"
+                android:textColor="@color/colorLetras"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/id_6"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:text="\n6"
+                android:textAlignment="center"
+                android:textColor="@color/colorLetras"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/id_7"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:text="\n7"
+                android:textAlignment="center"
+                android:textColor="@color/colorLetras"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/id_8"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:text="\n8"
+                android:textAlignment="center"
+                android:textColor="@color/colorLetras"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/id_9"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:text="\n9"
+                android:textAlignment="center"
+                android:textColor="@color/colorLetras"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/id_C"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:text="\nC"
+                android:textAlignment="center"
+                android:textColor="@color/colorLetras"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/id_0"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:text="\n0"
+                android:textAlignment="center"
+                android:textColor="@color/colorLetras"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/id_OK"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:text="\nOK"
+                android:textAlignment="center"
+                android:textColor="@color/colorLetras"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="124dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/id_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginEnd="174dp"
+        android:text="SafeHawk"
+        android:textColor="@color/colorLetras"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="158dp"
+        android:text="Ingrese su pin: "
+        android:textColor="@color/colorLetras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/id_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="75dp"
+        android:textColorHint="@color/colorLetras"
+        app:boxBackgroundColor="@color/colorLetras"
+        app:boxStrokeColor="@color/colorLetras"
+        app:counterOverflowTextColor="@color/colorLetras"
+        app:counterTextColor="@color/colorLetras"
+        app:errorTextColor="@color/colorLetras"
+        app:helperTextTextColor="@color/colorLetras"
+        app:hintTextColor="@color/colorLetras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:passwordToggleTint="@color/colorLetras"
+        app:startIconTint="@color/colorLetras">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/id_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorLetras"
+            android:textAlignment="center"
+            android:textColor="@color/colorLetras"
+            android:textColorHighlight="@color/colorLetras"
+            android:textColorHint="@color/colorLetras"
+            android:textColorLink="@color/colorLetras" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
