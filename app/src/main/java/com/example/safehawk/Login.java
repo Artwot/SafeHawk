@@ -29,7 +29,7 @@ public class Login extends AppCompatActivity
     TextInputEditText pass;
 
     String password = "";
-    String contra = "";
+    String contra = "*";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
