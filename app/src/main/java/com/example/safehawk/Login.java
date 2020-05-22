@@ -169,6 +169,8 @@ public class Login extends AppCompatActivity
             {
                 password += "9";
                 contra += "*";
+
+
                 pass.setText(contra);
             }
         });
