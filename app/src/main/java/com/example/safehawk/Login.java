@@ -29,7 +29,7 @@ public class Login extends AppCompatActivity
     TextInputEditText pass;
 
     String password = "";
-    String contra = "*";
+    String contra = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -56,7 +56,7 @@ public class Login extends AppCompatActivity
         num8 = findViewById(R.id.id_8);
         num9 = findViewById(R.id.id_9);
         delC = findViewById(R.id.id_C);
-        ok = findViewById(R.id.id_OK);;
+        ok = findViewById(R.id.id_OK);
         pass = findViewById(R.id.id_pass);
     }
 

@@ -19,4 +19,130 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_imagen"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="77dp"
+        android:background="@drawable/picture_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_docs"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/file_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btn_ubicacion"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/picture_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home" />
+
+    <Button
+        android:id="@+id/btn_password"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/btn_video"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/video_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_nube"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/cloud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="98dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="11dp"
+        android:text="Imágenes"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_imagen" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="96dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="365dp"
+        android:text="Documentos"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="96dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="9dp"
+        android:text="Nube"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_nube" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="96dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="53dp"
+        android:text="Ubicaciones"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ubicacion" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="96dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="365dp"
+        android:layout_marginEnd="53dp"
+        android:text="Contraseñas"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="96dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="53dp"
+        android:text="Videos"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_video" />
 </androidx.constraintlayout.widget.ConstraintLayout>
