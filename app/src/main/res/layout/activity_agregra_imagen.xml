@@ -6,35 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".AgregarImagen">
 
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="150dp"
+        android:layout_weight="1"
+        android:background="@drawable/boton"
+        android:text="@string/guardar"
+        android:textColor="@color/colorLetras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFoto"
+        android:layout_width="219dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="470dp"
+        android:background="@drawable/boton"
+        android:text="@string/tomar_foto"
+        android:textColor="@color/colorLetras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="300dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/ivFoto"
             android:layout_width="match_parent"
             android:layout_height="400dp"
             android:src="@drawable/ic_menu_camera" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btnFoto"
-                android:layout_width="219dp"
-                android:layout_height="68dp"
-                android:text="@string/tomar_foto" />
-
-            <Button
-                android:id="@+id/btnGuardar"
-                android:layout_width="wrap_content"
-                android:layout_height="67dp"
-                android:layout_weight="1"
-                android:text="@string/guardar" />
-        </LinearLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

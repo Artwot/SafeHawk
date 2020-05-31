@@ -41,7 +41,7 @@ public class AgregarUbicacion extends AppCompatActivity
         txtNombre=findViewById(R.id.txtNombreU);
         mensaje1=findViewById(R.id.mensaje1);
         mensaje2=findViewById(R.id.mensaje2);
-        btnGuardar=findViewById(R.id.btnGuardarU);
+        btnGuardar=findViewById(R.id.id_guardarC);
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION,}, 1000);

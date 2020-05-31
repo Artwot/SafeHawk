@@ -6,13 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".Agregar_notas">
 
+    <Button
+        android:id="@+id/btnLimpiarN"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="19dp"
+        android:layout_weight="1"
+        android:background="@drawable/boton"
+        android:text="@string/limpiar"
+        android:textColor="@color/colorLetras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnGuardarN"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="80dp"
+        android:layout_weight="1"
+        android:background="@drawable/boton"
+        android:text="@string/guardar"
+        android:textColor="@color/colorLetras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="150dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,33 +71,14 @@
         <EditText
             android:id="@+id/txtContenido"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
+            android:layout_height="343dp"
             android:autofillHints=""
+            android:background="@color/colorLetras"
             android:ems="10"
             android:gravity="start|top"
             android:hint="@string/ingresarcont"
             android:importantForAutofill="no"
             android:inputType="textMultiLine" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btnLimpiarN"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/limpiar" />
-
-            <Button
-                android:id="@+id/btnGuardarN"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/guardar" />
-        </LinearLayout>
 
 
     </LinearLayout>

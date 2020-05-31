@@ -14,6 +14,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.safehawk.AgregarImagen;
+import com.example.safehawk.AgregarPassword;
 import com.example.safehawk.AgregarUbicacion;
 import com.example.safehawk.Agregar_notas;
 import com.example.safehawk.R;
@@ -90,17 +91,11 @@ public class HomeFragment extends Fragment
 
         btn_pass.setOnClickListener(new View.OnClickListener()
         {
+            Intent intent = new Intent(getActivity(), AgregarPassword.class);
             @Override
             public void onClick(View v)
             {
-                // Crea el nuevo fragmento y la transacción.
-                Fragment nuevoFragmento = new RegistroFragment();
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.nav_host_fragment, nuevoFragmento);
-                transaction.addToBackStack(null);
-
-                // Commit a la transacción
-                transaction.commit();
+                startActivity(intent);
             }
         });
 
