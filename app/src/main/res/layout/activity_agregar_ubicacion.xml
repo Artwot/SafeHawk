@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarUbicacion">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtNombreU"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:ems="10"
+            android:hint="@string/ingresarnombre"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/mensaje1"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/mensaje2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="TextView" />
+
+
+
+        <Button
+            android:id="@+id/btnGuardarU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

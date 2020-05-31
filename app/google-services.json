@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "644846501640",
+    "firebase_url": "https://safehawk-89236.firebaseio.com",
+    "project_id": "safehawk-89236",
+    "storage_bucket": "safehawk-89236.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644846501640:android:44662567e7d7a0d87db6bd",
+        "android_client_info": {
+          "package_name": "com.example.safehawk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644846501640-ie83iplbs846qg186ihcduu3thabirf2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.safehawk",
+            "certificate_hash": "f42961cb18c12124e34792650fa7f52b6f1b9e06"
+          }
+        },
+        {
+          "client_id": "644846501640-60jtnth5mpdna4oo94ju8d3k61939e65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJkN6i8Gw4UBxtWqtstVBO22byl22AGa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644846501640-60jtnth5mpdna4oo94ju8d3k61939e65.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

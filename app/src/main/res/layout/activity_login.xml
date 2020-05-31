@@ -226,11 +226,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorLetras"
+            android:enabled="false"
+            android:inputType="textPassword"
             android:textAlignment="center"
             android:textColor="@color/colorLetras"
             android:textColorHighlight="@color/colorLetras"
             android:textColorHint="@color/colorLetras"
-            android:textColorLink="@color/colorLetras" />
+            android:textColorLink="@color/colorLetras"
+            android:textSize="24sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
