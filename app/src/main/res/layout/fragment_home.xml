@@ -98,7 +98,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="56dp"
         android:layout_marginTop="365dp"
-        android:text="Documentos"
+        android:text="Notas"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

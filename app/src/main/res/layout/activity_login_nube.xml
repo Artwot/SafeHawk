@@ -4,6 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".LoginNube">
 
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="200dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/id_correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingrese su correo"
+            android:textColor="@color/colorLetras" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorLetras"
+            app:boxBackgroundColor="@color/colorLetras"
+            app:boxStrokeColor="@color/colorLetras"
+            app:counterOverflowTextColor="@color/colorLetras"
+            app:counterTextColor="@color/colorLetras"
+            app:errorTextColor="@color/colorLetras"
+            app:helperTextTextColor="@color/colorLetras"
+            app:hintTextColor="@color/colorLetras">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_correoL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorLetras"
+                android:hint="Correo electrónico"
+                android:inputType="textWebEmailAddress"
+                android:shadowColor="@color/colorLetras"
+                android:textColor="@color/colorLetras"
+                android:textColorHighlight="@color/colorLetras"
+                android:textColorHint="@color/colorLetras"
+                android:textColorLink="@color/colorLetras" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese su password"
+            android:textColor="@color/colorLetras" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorLetras"
+            android:textColorHint="@color/colorLetras">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_passL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorLetras"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorLetras"
+                android:textColorHighlight="@color/colorLetras"
+                android:textColorHint="@color/colorLetras"
+                android:textColorLink="@color/colorLetras" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="192dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_g" />
+
+    <Button
+        android:id="@+id/id_ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="74dp"
+        android:background="@drawable/boton"
+        android:text="Ingresar"
+        android:textColor="@color/colorLetras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <TextView
+        android:id="@+id/id_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="¿No tiene una cuenta?, \nRegístrese"
+        android:textAlignment="center"
+        android:textColor="@color/colorLetras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_ingresar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

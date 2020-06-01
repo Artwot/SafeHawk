@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginNube"></activity>
+        <activity android:name=".InicioNube"></activity>
+        <activity android:name=".LoginNube" />
         <activity android:name=".AgregarPassword" />
         <activity android:name=".Login" />
         <activity android:name=".SplashScreen">
