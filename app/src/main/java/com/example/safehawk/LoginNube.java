@@ -1,5 +1,6 @@
 package com.example.safehawk;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,6 +12,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.safehawk.ui.registro.RegistroFragment;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 
@@ -72,11 +76,23 @@ public class LoginNube extends AppCompatActivity
 
     private void loginUser()
     {
-        Intent intent = new Intent(LoginNube.this, InicioNube.class);
-        Toast.makeText(LoginNube.this, "Bienvenido", Toast.LENGTH_SHORT).show();
-        startActivity(intent);
-        finish();
-
+        auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>()
+        {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task)
+            {
+                if (task.isSuccessful())
+                {
+                    Intent intent = new Intent(LoginNube.this, InicioNube.class);
+                    Toast.makeText(LoginNube.this, "Bienvenido", Toast.LENGTH_SHORT).show();
+                    startActivity(intent);
+                    finish();
+                }else
+                {
+                    Toast.makeText(LoginNube.this, "Correo o contraseña incorrectos.", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
     public void registrarse(View view)

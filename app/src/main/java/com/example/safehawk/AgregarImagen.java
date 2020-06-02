@@ -25,7 +25,7 @@ public class AgregarImagen extends AppCompatActivity
 {
 
     public static final int REQUEST_TAKE_PHOTO = 1;
-    String imagen = "n", currentPhotoPath, nombrefoto;
+    String imagen = "", currentPhotoPath, nombrefoto;
     Uri photoURI;
     Button btnFoto, btnGuardar;
     ImageView ivFoto;

@@ -104,9 +104,9 @@ public class SQLite {
         return db.rawQuery("SELECT * FROM UBICACIONES", null);
     }
 
-    public Cursor getMultimedia()
+    public Cursor getMultimedia(String usuario)
     {
-        return db.rawQuery("SELECT * FROM MULTIMEDIA", null);
+        return db.rawQuery("SELECT * FROM MULTIMEDIA WHERE USUARIO='"+usuario+"'", null);
     }
 
     public Cursor getTextos()
@@ -119,7 +119,7 @@ public class SQLite {
         ArrayList<String> listData = new ArrayList<>();
         if (cursor.moveToFirst()){
             do {
-                listData.add(cursor.getString(9));
+                listData.add(cursor.getString(2));
             }while (cursor.moveToNext());
         }
         return listData;
@@ -143,13 +143,13 @@ public class SQLite {
             String nombre,
             String clave,
             String contraseña
-               ) {
+    ) {
         ContentValues cv = new ContentValues(); //Equivalente a putExtra
         cv.put("ID", id);
         cv.put("NOMBRE", nombre);
         cv.put("CLAVE", clave);
         cv.put("CONTRASENIA", contraseña);
-      int cant = db.update(
+        int cant = db.update(
                 "USUARIOS",
                 cv,
                 "ID=" + id,
@@ -166,7 +166,7 @@ public class SQLite {
             String usuario,
             String nombre,
             String contenido)
-     {
+    {
         ContentValues cv = new ContentValues(); //Equivalente a putExtra
         cv.put("ID", id);
         cv.put("USUARIO", usuario);
@@ -184,11 +184,15 @@ public class SQLite {
         }
     }
 
-
-
     public Cursor getCant(int id) {
         return db.rawQuery(
                 "SELECT * FROM USUARIOS WHERE ID =" + id,
+                null);
+    }
+
+    public Cursor getMultimedia(int id) {
+        return db.rawQuery(
+                "SELECT * FROM MULTIMEDIA WHERE ID =" + id,
                 null);
     }
 
@@ -294,12 +298,4 @@ public class SQLite {
         return listData;
     }
 
-
-
-
-
-
-
-
 }
-

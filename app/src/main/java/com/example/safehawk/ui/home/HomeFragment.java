@@ -17,6 +17,7 @@ import com.example.safehawk.AgregarImagen;
 import com.example.safehawk.AgregarPassword;
 import com.example.safehawk.AgregarUbicacion;
 import com.example.safehawk.Agregar_notas;
+import com.example.safehawk.Galeria;
 import com.example.safehawk.LoginNube;
 import com.example.safehawk.R;
 import com.example.safehawk.SQLite.SQLite;
@@ -66,17 +67,11 @@ public class HomeFragment extends Fragment
 
         btn_video.setOnClickListener(new View.OnClickListener()
         {
+            Intent img = new Intent(getActivity(), Galeria.class);
             @Override
             public void onClick(View v)
             {
-                // Crea el nuevo fragmento y la transacción.
-                Fragment nuevoFragmento = new Imagenes();
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.nav_host_fragment, nuevoFragmento);
-                transaction.addToBackStack(null);
-
-                // Commit a la transacción
-                transaction.commit();
+                startActivity(img);
             }
         });
 
